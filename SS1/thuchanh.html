@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Bài 1:
+      str = "abcdef";
+      console.log(str.split("").reverse().join(""));
+
+      //Bài 2:
+      const arr = [1, 2, 3, 5, 4, 2, 6, 4];
+      const rs = arr.reduce((result, item) => {
+        console.log("result: ", result);
+        console.log("item: ", item);
+        console.log();
+        for (let i = 0; i < result.length; i++) {
+          if (result[i] === item) {
+            return result;
+          }
+        }
+        result.push(item);
+        return result;
+      }, []);
+      console.log(rs);
+
+      //Bài 3:
+      const arr1 = [2, 2, 2, 2, 1];
+      function findNums(arr) {
+        let time = 0;
+        let item;
+        for (let i = 0; i < arr1.length; i++) {
+          let count = 0;
+          for (let j = i; j < arr1.length; j++) {
+            if (arr[i] === arr[j]) count++;
+            if (time < count) {
+              time = count;
+              item = arr[i];
+            }
+          }
+        }
+        const ob = { Num: item, Count: time };
+        return console.log(ob);
+      }
+      findNums(arr1);
+    </script>
+  </body>
+</html>

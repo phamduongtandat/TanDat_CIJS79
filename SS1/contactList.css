@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+  }
+
+  .task {
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+  .task input {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 6px 5px;
+    border: solid 1px rgb(238, 238, 238);
+    width: 40%;
+  }
+
+  .task button {
+    background-color: rgb(48, 87, 190);
+    border-radius: 10px;
+    padding: 6px 2px;
+    border: solid 1px rgb(238, 238, 238);
+    color: white;
+    width: 18%;
+  }
+
+  .search {
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+  .search input {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 5px 5px;
+    border: solid 1px rgb(238, 238, 238);
+    width: 56%;
+  }
+
+  .search button {
+    background-color: rgb(48, 87, 190);
+    border-radius: 10px;
+    padding: 6px 15px;
+    border: solid 1px rgb(238, 238, 238);
+    color: white;
+  }
+
+  .main {
+
+  }
+
+  .item {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 15px 15px;
+    border: solid 1px rgb(238, 238, 238); 
+    font-weight: bolder; 
+    margin: 20px 0px;
+}
