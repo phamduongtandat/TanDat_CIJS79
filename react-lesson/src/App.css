@@ -1,0 +1,19 @@
+input[type='text'] {    
+  margin-top: 50px;
+  border: none;
+  border-bottom:2px solid grey;
+  width: 350px;
+  height: 25px;
+  font-weight: bolder;
+  font-size: large;
+}
+.task-list {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+.task-list li {
+  
+  font-size: x-large;
+
+}
